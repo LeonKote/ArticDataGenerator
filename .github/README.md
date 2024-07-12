@@ -1,4 +1,4 @@
-# ArticData
+# ArticData2
 
 [![license](https://img.shields.io/github/license/Articdive/ArticDataGenerator.svg)](../LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
