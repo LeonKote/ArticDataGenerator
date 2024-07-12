@@ -47,7 +47,7 @@ public final class EnchantmentGenerator extends DataGenerator_1_19_3<Enchantment
     public JsonObject generate() {
         JsonObject enchantments = new JsonObject();
 
-        for (ResourceLocation enchantmentRL : ENCHANTMENT_REGISTRY.keySet().stream().sorted(Comparator.comparingInt(value -> ENCHANTMENT_REGISTRY.getId(ENCHANTMENT_REGISTRY.get(value)))).toList()) {
+        /*for (ResourceLocation enchantmentRL : ENCHANTMENT_REGISTRY.keySet().stream().sorted(Comparator.comparingInt(value -> ENCHANTMENT_REGISTRY.getId(ENCHANTMENT_REGISTRY.get(value)))).toList()) {
             Enchantment e = ENCHANTMENT_REGISTRY.get(enchantmentRL);
             if (e == null) {
                 continue;
@@ -77,7 +77,7 @@ public final class EnchantmentGenerator extends DataGenerator_1_19_3<Enchantment
             enchantment.add("incompatibleEnchantments", incompatibleEnchaments);
 
             enchantments.add(enchantmentRL.toString(), enchantment);
-        }
+        }*/
         return enchantments;
     }
 }
