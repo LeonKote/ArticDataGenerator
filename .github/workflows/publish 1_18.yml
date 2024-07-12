@@ -30,6 +30,6 @@ jobs:
         with:
           source-directory: "ArticData/1.18/"
           user-email: "articdata@bot.io"
-          destination-github-username: "Articdive"
+          destination-github-username: "LeonKote"
           destination-repository-name: "ArticData"
           target-branch: "1.18"
