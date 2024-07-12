@@ -49,11 +49,11 @@ public final class DyeColorGenerator extends DataGenerator<DyeColor> {
             dyeColor.addProperty("textColor", ReflectionHelper.getHiddenField(float.class, "textColor", DyeColor.class, dc));
             dyeColor.addProperty("textureDiffuseColor", ReflectionHelper.getHiddenField(float.class, "textureDiffuseColor", DyeColor.class, dc));
             dyeColor.addProperty("textureDiffuseColorBGR", ReflectionHelper.getHiddenField(float.class, "textureDiffuseColorBGR", DyeColor.class, dc));
-            JsonArray array = new JsonArray();
+            /*JsonArray array = new JsonArray();
             for (float f : dc.getTextureDiffuseColors()) {
                 array.add(f);
             }
-            dyeColor.add("textureDiffuseColors", array);
+            dyeColor.add("textureDiffuseColors", array);*/
 
             dyeColors.add(dyeColor);
         }
