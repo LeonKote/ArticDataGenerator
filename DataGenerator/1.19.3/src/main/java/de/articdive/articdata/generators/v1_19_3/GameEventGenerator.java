@@ -43,7 +43,7 @@ public final class GameEventGenerator extends DataGenerator_1_19_3<GameEvent> {
 
             gameEvent.addProperty("id", GAME_EVENT_REGISTRY.getId(ge));
             gameEvent.addProperty("mojangName", names.get(ge));
-            gameEvent.addProperty("notificationRadius", ge.getNotificationRadius());
+            //gameEvent.addProperty("notificationRadius", ge.getNotificationRadius());
             gameEvents.add(gameEventRL.toString(), gameEvent);
         }
         return gameEvents;
