@@ -76,7 +76,7 @@ public final class FluidGenerator extends DataGenerator_1_19_3<Fluid> {
                 for (final FluidState fs : f.getStateDefinition().getPossibleStates()) {
                     final JsonObject state = new JsonObject();
 
-                    {
+                    /*{
                         final JsonObject properties = new JsonObject();
                         for (final Map.Entry<Property<?>, Comparable<?>> entry : fs.getValues().entrySet()) {
                             final Class<?> valClass = entry.getKey().getValueClass();
@@ -89,7 +89,7 @@ public final class FluidGenerator extends DataGenerator_1_19_3<Fluid> {
                             }
                         }
                         state.add("properties", properties);
-                    }
+                    }*/
 
                     state.addProperty("stateId", Fluid.FLUID_STATE_REGISTRY.getId(fs));
 
