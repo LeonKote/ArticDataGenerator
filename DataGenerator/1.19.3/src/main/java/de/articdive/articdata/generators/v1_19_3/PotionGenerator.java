@@ -57,7 +57,7 @@ public final class PotionGenerator extends DataGenerator_1_19_3<Potion> {
             for (MobEffectInstance mei : p.getEffects()) {
 
                 JsonObject potionEffect = new JsonObject();
-                potionEffect.addProperty("id", MOB_EFFECT_REGISTRY.getKey(mei.getEffect()).toString());
+                //potionEffect.addProperty("id", MOB_EFFECT_REGISTRY.getKey(mei.getEffect()).toString());
                 potionEffect.addProperty("duration", mei.getDuration());
                 potionEffect.addProperty("amplifier", mei.getAmplifier());
                 potionEffect.addProperty("visible", mei.isVisible());
