@@ -71,7 +71,7 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
             JsonObject item = new JsonObject();
             item.addProperty("id", ITEM_REGISTRY.getId(i));
             item.addProperty("mojangName", names.get(i));
-            item.addProperty("rarity", i.getRarity(ItemStack.EMPTY).name()); // We want the rarity property here
+            //item.addProperty("rarity", i.getRarity(ItemStack.EMPTY).name()); // We want the rarity property here
             item.addProperty("translationKey", i.getDescriptionId());
             item.addProperty("depletes", i.canBeDepleted());
             item.addProperty("maxStackSize", i.getMaxStackSize());
