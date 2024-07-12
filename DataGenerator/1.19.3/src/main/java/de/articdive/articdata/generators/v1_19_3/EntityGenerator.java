@@ -97,7 +97,7 @@ public final class EntityGenerator extends DataGenerator_1_19_3<EntityType<?>> {
             // entity.addProperty("fixed", et.getDimensions().fixed); also basically useless
 
             // Use some reflection to find some metadata properties we need
-            {
+            /*{
                 JsonArray metadata = new JsonArray();
                 Class<?> currentClass = entityClass;
                 do {
@@ -122,7 +122,7 @@ public final class EntityGenerator extends DataGenerator_1_19_3<EntityType<?>> {
                     }
                 } while ((currentClass = currentClass.getSuperclass()) != null);
                 entity.add("metadata", metadata);
-            }
+            }*/
 
             entities.add(entityRL.toString(), entity);
         }
