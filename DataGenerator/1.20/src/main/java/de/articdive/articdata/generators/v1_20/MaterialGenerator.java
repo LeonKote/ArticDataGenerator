@@ -89,7 +89,7 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
                 item.addProperty("drinkingSound", drinkingSound.toString());
             }
             // Food Properties
-            if (i.isEdible() && i.getFoodProperties() != null) {
+            /*if (i.isEdible() && i.getFoodProperties() != null) {
                 FoodProperties fp = i.getFoodProperties();
 
                 JsonObject foodProperties = new JsonObject();
@@ -117,7 +117,7 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
                     foodProperties.add("effects", effects);
                 }
                 item.add("foodProperties", foodProperties);
-            }
+            }*/
             // Custom Properties for the different types of ItemStack
             {
                 JsonObject specificItemData = new JsonObject();
