@@ -61,7 +61,7 @@ public final class PacketGenerator extends DataGenerator<Class<? extends Packet<
             connectionProtocolSection.addProperty("ordinal", entry.getKey().ordinal());
             connectionProtocolSection.addProperty("id", entry.getKey().id());
 
-            Map<PacketFlow, ConnectionProtocol.CodecData<?>> flows = entry.getValue();
+            /*Map<PacketFlow, ConnectionProtocol.CodecData<?>> flows = entry.getValue();
             for (PacketFlow packetFlow : PacketFlow.values()) {
                 JsonArray flowSection = new JsonArray();
                 // PacketSet
@@ -87,7 +87,7 @@ public final class PacketGenerator extends DataGenerator<Class<? extends Packet<
                     }
                 }
                 connectionProtocolSection.add(packetFlow.name(), flowSection);
-            }
+            }*/
 
             packets.add(entry.getKey().name(), connectionProtocolSection);
         }
