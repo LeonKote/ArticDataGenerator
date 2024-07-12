@@ -77,7 +77,7 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
             //item.addProperty("maxStackSize", i.getMaxStackSize());
             //item.addProperty("maxDamage", i.getMaxDamage());
             // item.addProperty("complex", i.isComplex()); basically useless
-            item.addProperty("edible", i.isEdible());
+            //item.addProperty("edible", i.isEdible());
             item.addProperty("fireResistant", i.isFireResistant());
             item.addProperty("blockId", BLOCK_REGISTRY.getKey(Block.byItem(i)).toString());
             ResourceLocation eatingSound = SOUND_EVENT_REGISTRY.getKey(i.getEatingSound());
