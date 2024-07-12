@@ -139,7 +139,7 @@ public final class BlockGenerator extends DataGenerator_1_19_3<Block> {
                 for (BlockState bs : b.getStateDefinition().getPossibleStates()) {
                     JsonObject state = new JsonObject();
 
-                    {
+                    /*{
                         JsonObject properties = new JsonObject();
                         for (Map.Entry<Property<?>, Comparable<?>> entry : bs.getValues().entrySet()) {
                             Class<?> valClass = entry.getKey().getValueClass();
@@ -152,7 +152,7 @@ public final class BlockGenerator extends DataGenerator_1_19_3<Block> {
                             }
                         }
                         state.add("properties", properties);
-                    }
+                    }*/
 
                     state.addProperty("stateId", Block.BLOCK_STATE_REGISTRY.getId(bs));
 
