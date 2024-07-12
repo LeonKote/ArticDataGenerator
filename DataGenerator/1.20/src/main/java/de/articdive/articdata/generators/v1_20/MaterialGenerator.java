@@ -75,7 +75,7 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
             item.addProperty("translationKey", i.getDescriptionId());
             //item.addProperty("depletes", i.canBeDepleted());
             //item.addProperty("maxStackSize", i.getMaxStackSize());
-            item.addProperty("maxDamage", i.getMaxDamage());
+            //item.addProperty("maxDamage", i.getMaxDamage());
             // item.addProperty("complex", i.isComplex()); basically useless
             item.addProperty("edible", i.isEdible());
             item.addProperty("fireResistant", i.isFireResistant());
