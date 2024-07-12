@@ -132,13 +132,13 @@ public final class MaterialGenerator extends DataGenerator_1_19_3<Item> {
                     specificItemData.add("armorProperties", armorProperties);
                 }
                 // SpawnEgg properties
-                if (i instanceof SpawnEggItem sei) {
+                /*if (i instanceof SpawnEggItem sei) {
 
                     JsonObject spawnEggProperties = new JsonObject();
                     spawnEggProperties.addProperty("entityType", ENTITY_TYPE_REGISTRY.getKey(sei.getType(null)).toString());
 
                     specificItemData.add("spawnEggProperties", spawnEggProperties);
-                }
+                }*/
                 // TieredItem Properties
                 if (i instanceof TieredItem) {
 
