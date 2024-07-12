@@ -35,9 +35,9 @@ public final class RecipeGenerator extends DataGenerator<Void> {
     public JsonElement generate() {
         File recipesFolder = new File(Initializer.DATA_FOLDER_1_19_3, "recipes");
 
-        List<File> children = new ArrayList<>(Arrays.stream(Objects.requireNonNull(recipesFolder.listFiles())).sorted(Comparator.comparing(File::getName)).toList());
+        //List<File> children = new ArrayList<>(Arrays.stream(Objects.requireNonNull(recipesFolder.listFiles())).sorted(Comparator.comparing(File::getName)).toList());
         JsonObject recipes = new JsonObject();
-        for (File child : children) {
+        /*for (File child : children) {
             // Add subdirectories files to the for-loop.
             if (child.isDirectory()) {
                 File[] subChildren = child.listFiles();
@@ -59,7 +59,7 @@ public final class RecipeGenerator extends DataGenerator<Void> {
             // Remove .json by removing last 5 chars of the name.
             String tableName = fileName.substring(0, fileName.length() - 5);
             recipes.add("minecraft:" + tableName, recipe);
-        }
+        }*/
         return recipes;
     }
 }
