@@ -115,7 +115,7 @@ public final class BlockGenerator extends DataGenerator_1_19_3<Block> {
             block.addProperty("defaultStateId", Block.BLOCK_STATE_REGISTRY.getId(b.defaultBlockState()));
             //block.addProperty("lootTableLocation", b.getLootTable().toString());
             //block.addProperty("verticalOffset", b.getMaxVerticalOffset());
-            block.addProperty("horizontalOffset", b.getMaxHorizontalOffset());
+            //block.addProperty("horizontalOffset", b.getMaxHorizontalOffset());
             block.addProperty("defaultHardness", b.defaultDestroyTime());
 
             Item correspondingItem = Item.BY_BLOCK.getOrDefault(b, null);
