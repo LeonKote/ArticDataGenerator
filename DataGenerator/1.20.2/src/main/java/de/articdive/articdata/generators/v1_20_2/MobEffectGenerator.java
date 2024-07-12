@@ -61,7 +61,7 @@ public final class MobEffectGenerator extends DataGenerator_1_19_3<MobEffect> {
             effect.addProperty("color", me.getColor());
             effect.addProperty("instantaneous", me.isInstantenous());
 
-            JsonArray modifiers = new JsonArray();
+            /*JsonArray modifiers = new JsonArray();
             for (Map.Entry<Attribute, AttributeModifierTemplate> attributeModifierEntry : me.getAttributeModifiers().entrySet()) {
                 Attribute attribute = attributeModifierEntry.getKey();
                 AttributeModifierTemplate modifierTemplate = attributeModifierEntry.getValue();
@@ -81,7 +81,7 @@ public final class MobEffectGenerator extends DataGenerator_1_19_3<MobEffect> {
 
                 modifiers.add(attributeModifier);
             }
-            effect.add("modifiers", modifiers);
+            effect.add("modifiers", modifiers);*/
 
             effects.add(effectRL.toString(), effect);
         }
