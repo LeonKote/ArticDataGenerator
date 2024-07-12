@@ -35,7 +35,7 @@ public final class PacketGenerator extends DataGenerator<Class<? extends Packet<
     @SuppressWarnings("unchecked")
     @Override
     public void generateNames() {
-        for (Map.Entry<ConnectionProtocol, Map<PacketFlow, ConnectionProtocol.CodecData<?>>> connectionProtocolMapEntry : connectionProtocolPacketSets.entrySet()) {
+        /*for (Map.Entry<ConnectionProtocol, Map<PacketFlow, ConnectionProtocol.CodecData<?>>> connectionProtocolMapEntry : connectionProtocolPacketSets.entrySet()) {
             Map<PacketFlow, ConnectionProtocol.CodecData<?>> flows = connectionProtocolMapEntry.getValue();
             for (PacketFlow packetFlow : PacketFlow.values()) {
                 ConnectionProtocol.CodecData<?> codecData = flows.get(packetFlow);
@@ -50,7 +50,7 @@ public final class PacketGenerator extends DataGenerator<Class<? extends Packet<
                     }
                 }
             }
-        }
+        }*/
     }
 
     @Override
