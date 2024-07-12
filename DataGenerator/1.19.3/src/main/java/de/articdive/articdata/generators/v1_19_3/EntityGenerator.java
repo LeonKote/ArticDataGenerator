@@ -93,7 +93,7 @@ public final class EntityGenerator extends DataGenerator_1_19_3<EntityType<?>> {
             entity.addProperty("height", et.getHeight());
             entity.addProperty("width", et.getWidth());
             entity.addProperty("clientTrackingRange", et.clientTrackingRange());
-            entity.addProperty("lootTableLocation", et.getDefaultLootTable().toString());
+            //entity.addProperty("lootTableLocation", et.getDefaultLootTable().toString());
             // entity.addProperty("fixed", et.getDimensions().fixed); also basically useless
 
             // Use some reflection to find some metadata properties we need
